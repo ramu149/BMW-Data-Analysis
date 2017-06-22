@@ -68,7 +68,9 @@ public class CrawlingMultiplePages {
 	 	int pageNum= 0;
 		pageNum=Integer.parseInt((pages.substring(10)).replaceAll("\\s+",""));
 		for (Element e:mlinks)
-			 multipleLinks.add(e.absUrl("href")); 	
+			 multipleLinks.add(e.absUrl("href")); 
+		//Element e = mlinks.absUrl("href").first();
+		//String pageLink = e.text();
 		int num=Integer.parseInt(prop.getProperty("misc4"));//misc4
 		String s=multipleLinks.get(0).substring( 0,multipleLinks.get(0).length()-num);	
 		for(int x=2;x<=pageNum;x++)
