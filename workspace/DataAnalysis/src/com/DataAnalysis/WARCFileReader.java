@@ -110,14 +110,8 @@ public class WARCFileReader {
 				}
 			}
 			}
-			catch(NullPointerException npe){
-				System.out.println("execption thrown at" +npe);
-				}
-			catch(IndexOutOfBoundsException iobe){
-				System.out.println("execption thrown at" +iobe);
-				}
-			catch(IllegalArgumentException iobe){
-				System.out.println("execption thrown at" +iobe);
+			catch(Exception e){
+				e.printStackTrace();
 				}
 			} 
 		}
