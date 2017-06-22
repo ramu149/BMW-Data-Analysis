@@ -88,7 +88,7 @@ public class forumURL {
 		
 		}
 		catch(Exception e){
-		
+			e.printStackTrace();
 		}
 	}
 }
