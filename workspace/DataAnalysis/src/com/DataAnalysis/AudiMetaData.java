@@ -68,7 +68,7 @@ public class AudiMetaData {
 		
 		}
 		catch(Exception e){
-		
+			e.printStackTrace();
 		}
 	}
 
